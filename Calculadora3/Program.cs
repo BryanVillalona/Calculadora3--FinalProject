@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.Clear();
+           // Console.ForegroundColor = ConsoleColor.Gray;
             //Este comentario es para ver si GitHub guarda mi cambio
             //Este es para ver que se guarde completo
             Console.WriteLine("*********************************************");
@@ -21,9 +25,11 @@
 
             while (!double.TryParse(Console.ReadLine(), out num1))
             {
+                Console.Clear();
                 Console.WriteLine("la entrada no es valida");
+               // Console.Clear();    
                 Console.WriteLine("Ingrese el primer numero nuevamente: ");
-
+                
             }
 
             Console.WriteLine();
@@ -102,31 +108,43 @@
                     case 5:
                         resultado = Math.Sin(num1);
                         Console.WriteLine($"El resultado del seno de  {num1} es: " + (resultado));
+                        resultado = Math.Sin(num2);
+                        Console.WriteLine($"El resultado del seno de  {num2} es: " + (resultado));
                         num1 = resultado;
                         break;
                     case 6:
                         resultado = Math.Cos(num1);
                         Console.WriteLine($"El resultado del coseno de  {num1} es: " + resultado);
+                        resultado = Math.Cos(num2);
+                        Console.WriteLine($"El resultado del seno de  {num2} es: " + (resultado));
                         num1 = resultado;
                         break;
                     case 7:
                         resultado = Math.Tan(num1);
                         Console.WriteLine($"El resultado la tangente de  {num1} es: " + resultado);
+                        resultado = Math.Tan(num2);
+                        Console.WriteLine($"El resultado del seno de  {num2} es: " + (resultado));
                         num1 = resultado;
                         break;
                     case 8:
                         resultado = Math.Exp(num1);
                         Console.WriteLine($"El resultado el exponencial de  {num1} es: " + resultado);
+                        resultado = Math.Exp(num2);
+                        Console.WriteLine($"El resultado del seno de  {num2} es: " + (resultado));
                         num1 = resultado;
                         break;
                     case 9:
                         resultado = Math.Log(num1);
                         Console.WriteLine($"El resultado del logaritmo de {num1} y {num2} es: " + resultado);
+                        resultado = Math.Log(num2);
+                        Console.WriteLine($"El resultado del seno de  {num2} es: " + (resultado));
                         num1 = resultado;
                         break;
                     case 10:
                         resultado = Math.Sqrt(num1);
                         Console.WriteLine($"El resultado del logaritmo de {num1} y {num2} es: " + resultado);
+                        resultado = Math.Sqrt(num2);
+                        Console.WriteLine($"El resultado del seno de  {num2} es: " + (resultado));
                         num1 = resultado;
                         break;
                     default:
@@ -136,6 +154,8 @@
                 }
                 Console.WriteLine("Pulse Y para seguir operando");
                 terminar = Console.ReadLine().Trim().ToLower();
+              //  Console.Clear();
+               
             }
         }
 
