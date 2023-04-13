@@ -22,19 +22,14 @@
             double num2;
             string terminar = "y";
             Console.WriteLine("Ingrese el primer numero: ");
-
             while (!double.TryParse(Console.ReadLine(), out num1))
             {
                 Console.Clear();
                 Console.WriteLine("la entrada no es valida");
-               // Console.Clear();    
                 Console.WriteLine("Ingrese el primer numero nuevamente: ");
-                
             }
-
             Console.WriteLine();
             //creando un ciclo
-
             while (terminar == "y")
             {
                 Console.WriteLine("Ingrese el siguiente numero: ");
@@ -46,8 +41,6 @@
                 //num2 = Convert.ToDouble(Console.ReadLine());
                 // double.TryParse(Console.ReadLine());
                 Console.WriteLine();
-
-                //<<<<<<< HEAD
                 Console.WriteLine("Escribe el nombre del operador quieres usar: ");
                 Console.WriteLine();
                 Console.WriteLine("1 - SUMA");
@@ -63,17 +56,6 @@
                 Console.WriteLine();
                 int operador = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine();
-
-
-                //=======
-                ////Console.WriteLine("Ingrese dos números:");
-                ////double num1 = Convert.ToInt32(Console.ReadLine());
-                ////double num2 = Convert.ToInt32(Console.ReadLine());
-                //>>>>>>> 41abe2098913176a01924cb1eb095ca16fa81140
-                //primer comentario
-
-                //double opcion = Convert.ToInt32(Console.ReadLine());
-
                 double resultado;
                 switch (operador)
                 {
@@ -150,12 +132,9 @@
                     default:
                         Console.WriteLine("Ingresaste un valor invalido, regresa al menu.");
                         break;
-
                 }
                 Console.WriteLine("Pulse Y para seguir operando");
                 terminar = Console.ReadLine().Trim().ToLower();
-              //  Console.Clear();
-               
             }
         }
 
